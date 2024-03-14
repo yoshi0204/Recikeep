@@ -1,0 +1,10 @@
+/* Dividerのデフォルトスタイル */
+.hr-default {
+    margin: 1rem 0; /* my-4 */
+    border: 0;
+    height: 1px;
+    background-color: #e2e8f0; /* ここでは薄いグレーの色を設定していますが、必要に応じて変更 */
+  }
+  
+  
+  

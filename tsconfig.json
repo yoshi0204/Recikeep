@@ -21,6 +21,12 @@
     },
     "allowSyntheticDefaultImports": true // このオプションを追加
   },
+  "ts-node": {
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }, // Add closing curly brace here
   "include": ["src", "vitest-setup.ts"],
   "exclude": [
     "node_modules",
@@ -29,4 +35,4 @@
     "**/__tests__/*"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
-}
+  }

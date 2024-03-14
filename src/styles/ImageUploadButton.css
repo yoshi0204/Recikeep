@@ -1,0 +1,15 @@
+/* ImageUploadButton コンポーネントのスタイル */
+.file-input {
+    cursor: pointer; /* ファイル選択時のカーソルスタイル */
+    border-radius: 0.25rem;
+    border: none;
+    background-color: #4299e1; /* ブルー */
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+  
+  .file-input:hover {
+    background-color: #3182ce; /* ホバー時の色 */
+  }
+  

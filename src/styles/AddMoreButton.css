@@ -1,0 +1,25 @@
+.add-more-button {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #4299e1;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .add-more-button:hover {
+    background-color: #3182ce;
+  }
+  
+  .add-more-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  }
+  

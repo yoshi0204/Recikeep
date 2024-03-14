@@ -1,0 +1,11 @@
+/* LinkAtom コンポーネント用の "link" クラス */
+.link {
+    color: #3182ce; /* リンクの色 */
+    text-decoration: none; /* 下線をなくす */
+  }
+  
+  .link:hover {
+    text-decoration: underline; /* ホバー時に下線を表示 */
+    color: #63b3ed; /* ホバー時の色 */
+  }
+  

@@ -1,6 +1,4 @@
 // src/components/atoms/TextareaInput.tsx
-import React from 'react';
-
 interface TextareaInputProps {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
@@ -13,7 +11,7 @@ const TextareaInput: React.FC<TextareaInputProps> = ({ value, onChange, placehol
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className="border rounded p-2 w-full"
+      className="textarea-input"
       rows={4}
     />
   );

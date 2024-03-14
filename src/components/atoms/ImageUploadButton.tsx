@@ -20,7 +20,7 @@ const ImageUploadButton: React.FC<ImageUploadButtonProps> = ({ onImageSelect }) 
         type="file"
         accept="image/*"
         onChange={handleFileChange}
-        className="file:cursor-pointer file:rounded file:border-0 file:bg-blue-500 file:text-white"
+        className="file-input"
       />
     </label>
   );

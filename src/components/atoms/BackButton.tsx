@@ -8,16 +8,16 @@ const BackButton: React.FC = () => {
   const navigate = useNavigate();
 
   const goBack = () => {
-    navigate(-1); // ブラウザの履歴を一つ戻ります。
+    navigate(-1); // ブラウザの履歴を一つ戻る。
   };
 
   return (
     <button
       onClick={goBack}
-      className="flex items-center px-4 py-2 space-x-2 bg-gray-200 text-gray-700 rounded hover:bg-gray-300"
+      className="back-button"
     >
       <FontAwesomeIcon icon={faArrowLeft} />
-      <span>戻る</span>
+      <span>go back</span>
     </button>
   );
 };

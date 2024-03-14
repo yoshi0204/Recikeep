@@ -1,6 +1,4 @@
 // src/components/atoms/Divider.tsx
-import React from 'react';
-
 interface DividerProps {
   className?: string;
 }
