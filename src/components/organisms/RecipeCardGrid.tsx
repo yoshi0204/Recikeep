@@ -1,12 +1,9 @@
 // src/components/organisms/RecipeCardGrid.tsx
-import React from 'react';
 import RecipeCard from '../molecules/RecipeCard';
 
 interface Recipe {
-  recipeId: number;
   imageUrl: string;
   title: string;
-  description: string;
 }
 
 interface RecipeCardGridProps {
@@ -15,14 +12,12 @@ interface RecipeCardGridProps {
 
 const RecipeCardGrid: React.FC<RecipeCardGridProps> = ({ recipes }) => {
   return (
-    <div className="recipe-card-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '16px' }}>
-      {recipes.map(recipe => (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6 py-4">
+      {recipes.map((recipe, index) => (
         <RecipeCard
-          key={recipe.recipeId}
-          recipeId={recipe.recipeId}
+          key={index}
           imageUrl={recipe.imageUrl}
           title={recipe.title}
-          description={recipe.description}
         />
       ))}
     </div>

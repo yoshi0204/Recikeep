@@ -34,7 +34,7 @@ const RecipeDetailView: React.FC<RecipeDetailViewProps> = ({
 }) => {
   return (
     <div className="recipe-detail-view">
-      <ImageDisplay src={imageUrl} alt={title} className="recipe-image" />
+      <ImageDisplay src={imageUrl} alt={title} className="ml-auto" />
       <h1>{title}</h1>
       <p>{description}</p>
       <p>調理時間: {cookingTime}分</p>

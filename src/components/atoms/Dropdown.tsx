@@ -1,6 +1,4 @@
 // src/components/atoms/Dropdown.tsx
-import React from 'react';
-
 interface DropdownProps {
   options: string[];
   selected: string;
@@ -12,7 +10,8 @@ const Dropdown: React.FC<DropdownProps> = ({ options, selected, onChange }) => {
     <select 
       value={selected} 
       onChange={(e) => onChange(e.target.value)}
-      className="dropdown"
+      className="border-gray-300 rounded shadow p-2 bg-white"
+
     >
       {options.map(option => (
         <option key={option} value={option}>{option}</option>

@@ -9,7 +9,7 @@ interface IconProps {
 }
 
 const Icon: React.FC<IconProps> = ({ icon, className }) => {
-  return <FontAwesomeIcon icon={icon} className={className} />;
+  return <FontAwesomeIcon icon={icon} className={className || 'text-gray-500'} />;
 };
 
 export default Icon;

@@ -1,6 +1,4 @@
 // src/components/atoms/ImageUploadButton.tsx
-import React from 'react';
-
 interface ImageUploadButtonProps {
   onImageSelect: (file: File) => void;
 }
@@ -20,7 +18,8 @@ const ImageUploadButton: React.FC<ImageUploadButtonProps> = ({ onImageSelect }) 
         type="file"
         accept="image/*"
         onChange={handleFileChange}
-        className="file-input"
+        className="cursor-pointer rounded border border-gray-300 p-2 text-sm text-gray-700 bg-white hover:bg-gray-50"
+
       />
     </label>
   );

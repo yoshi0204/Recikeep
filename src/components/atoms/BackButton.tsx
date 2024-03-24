@@ -14,7 +14,8 @@ const BackButton: React.FC = () => {
   return (
     <button
       onClick={goBack}
-      className="back-button"
+      className="flex items-center px-4 py-2 bg-gray-200 text-gray-700 rounded hover:bg-gray-300"
+
     >
       <FontAwesomeIcon icon={faArrowLeft} />
       <span>go back</span>

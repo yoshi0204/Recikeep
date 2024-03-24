@@ -1,6 +1,4 @@
 // src/components/atoms/Label.tsx
-import React from 'react';
-
 interface LabelProps {
   text: string;
   htmlFor?: string;
@@ -8,7 +6,8 @@ interface LabelProps {
 
 const Label: React.FC<LabelProps> = ({ text, htmlFor }) => {
   return (
-    <label htmlFor={htmlFor} className="label">
+    <label htmlFor={htmlFor} className="block text-base mb-1"
+    >
       {text}
     </label>
   );

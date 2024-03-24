@@ -1,6 +1,3 @@
-// src/components/atoms/ImageDisplay.tsx
-import React from 'react';
-
 interface ImageDisplayProps {
   src: string;
   alt?: string;
@@ -8,7 +5,7 @@ interface ImageDisplayProps {
 }
 
 const ImageDisplay: React.FC<ImageDisplayProps> = ({ src, alt, className }) => {
-  return <img src={src} alt={alt || 'image'} className={className || 'Image-display'} />;
+  return <img src={src} alt={alt || 'image'} className={className}/>;
 };
 
 export default ImageDisplay;

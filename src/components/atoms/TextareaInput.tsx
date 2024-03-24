@@ -11,7 +11,8 @@ const TextareaInput: React.FC<TextareaInputProps> = ({ value, onChange, placehol
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className="textarea-input"
+      className="border-gray-300 rounded shadow p-2 bg-white"
+
       rows={4}
     />
   );

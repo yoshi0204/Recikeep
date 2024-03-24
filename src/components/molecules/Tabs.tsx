@@ -1,7 +1,4 @@
-// src/components/molecules/Tabs.tsx
 import React, { useState } from 'react';
-import PrimaryButton from '../atoms/PrimaryButton';
-import Link from '../atoms/Link';
 
 interface Tab {
   label: string;
@@ -13,22 +10,30 @@ interface TabsProps {
 }
 
 const Tabs: React.FC<TabsProps> = ({ tabs }) => {
-  const [activeTab, setActiveTab] = useState(tabs[0].label);
+  const [activeTab, setActiveTab] = useState<string>(tabs[0].label);
 
   return (
-    <div>
-      <div className="flex">
-        {tabs.map((tab, index) => (
-          <PrimaryButton key={index} onClick={() => setActiveTab(tab.label)}>
+    <div className="flex flex-col items-center w-full">
+      <div className="flex space-x-2 mt-2 bg-gray-800 p-1 rounded-xl">
+        {tabs.map((tab: Tab, index: number) => (
+          <button
+            key={index}
+            onClick={() => setActiveTab(tab.label)}
+            className={`text-3xl font-medium px-4 py-2 rounded
+              ${activeTab === tab.label
+                ? 'text-yellow-400'
+                : 'text-black hover:text-yellow-400'
+              } transition-colors duration-300`}
+          >
             {tab.label}
-          </PrimaryButton>
+          </button>
         ))}
       </div>
-      <div className="tab-content">
-        {tabs.map((tab, index) => (
+      <div className="tab-content mt-4 w-full">
+        {tabs.map((tab: Tab, index: number) => (
           activeTab === tab.label && (
-            <div key={index}>
-              {typeof tab.content === 'string' ? <Link to={tab.content}>{tab.content}</Link> : tab.content}
+            <div key={index} className="p-4 text-white">
+              {tab.content}
             </div>
           )
         ))}
@@ -38,3 +43,4 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
 };
 
 export default Tabs;
+

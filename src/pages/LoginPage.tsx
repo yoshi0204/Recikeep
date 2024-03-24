@@ -1,11 +1,11 @@
 // src/pages/LoginPage.tsx
 import React from 'react';
-import LoginTemplate from '../components/templates/LoginTemplate';
+import LoginForm from 'src/components/organisms/LoginForm';
 
 const LoginPage: React.FC = () => {
   return (
     <div>
-      <LoginTemplate /> // テンプレートコンポーネントを使用
+      <LoginForm />
     </div>
   );
 };

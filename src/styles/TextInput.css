@@ -1,8 +1,0 @@
-/* TextInput コンポーネントのスタイル */
-.text-input {
-    border: 1px solid #e2e8f0; /* 薄いグレーの境界線 */
-    border-radius: 0.25rem; /* 角丸 */
-    padding: 0.5rem; /* 内側の余白 */
-    width: 100%; /* 全幅 */
-  }
-  

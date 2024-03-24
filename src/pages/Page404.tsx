@@ -4,8 +4,8 @@ import NotFoundTemplate from '../components/templates/NotFoundTemplate';
 
 const Page404: React.FC = () => {
   return (
-    <div>
-      <NotFoundTemplate /> // テンプレートコンポーネントを使用
+    <div >
+      <NotFoundTemplate />
     </div>
   );
 };

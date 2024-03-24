@@ -1,6 +1,4 @@
 // src/components/atoms/TextInput.tsx
-import React from 'react';
-
 interface TextInputProps {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -15,7 +13,8 @@ const TextInput: React.FC<TextInputProps> = ({ value, onChange, placeholder, typ
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className="border rounded p-2 w-full"
+      className="w-full p-2 text-base border border-gray-300 rounded mb-4"
+
     />
   );
 };

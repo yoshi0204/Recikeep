@@ -20,10 +20,8 @@ const RecipeList: React.FC<RecipeListProps> = ({ recipes }) => {
       {recipes.map((recipe, index) => (
         <React.Fragment key={recipe.recipeId}>
           <RecipeCard
-            recipeId={recipe.recipeId}
             imageUrl={recipe.imageUrl}
             title={recipe.title}
-            description={recipe.description}
           />
           {index < recipes.length - 1 && <Divider />}
         </React.Fragment>
