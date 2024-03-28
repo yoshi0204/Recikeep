@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# Recikeep - Your Digital Recipe Keeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Recikeepは、お気に入りのレシピを保存し、簡単にアクセスできるデジタルレシピキーパーです。このプロジェクトはReact, TypeScript, Viteを使用して構築されており、開発時にはHMR（Hot Module Replacement）を活用し、ESLintのルールをいくつか適用しています。
 
-Currently, two official plugins are available:
+## プロジェクトの特徴
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + TypeScriptでの開発体験
+- Viteによる高速なビルドとHMR
+- ESLintによるコード品質の向上
 
-## Expanding the ESLint configuration
+## 使用している主な技術
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- TypeScript
+- Vite
+- ESLint
+- Tailwind CSS for styling
+- Axios
+- Storybook
+- React Hook Form
+- Zod
+- Prettier
 
-- Configure the top-level `parserOptions` property like this:
+## プラグイン
+
+現在、以下の公式プラグインを使用しています:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)：Babelを使用してFast Refreshを提供
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)：SWCを使用してFast Refreshを提供
+
+## ESLint設定の拡張
+
+開発中のアプリケーションに対してより厳密なルールを適用するためには、以下のように設定を更新します:
 
 ```js
 export default {
-  // other rules...
+  // 他のルール...
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ["./tsconfig.json", "./tsconfig.node.json"],
     tsconfigRootDir: __dirname,
   },
 };
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
