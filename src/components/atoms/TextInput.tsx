@@ -1,4 +1,3 @@
-// src/components/atoms/TextInput.tsx
 interface TextInputProps {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;

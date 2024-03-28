@@ -1,4 +1,3 @@
-// src/components/templates/AddRecipeTemplate.tsx
 import { useState } from 'react';
 import RecipeForm from '../organisms/RecipeForm';
 import ImageUploadSection from '../molecules/ImageUploadSection';
@@ -18,18 +17,18 @@ interface RecipeDataType {
 }
 
 const AddRecipeTemplate = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string>("和食");
+  const [selectedCategory, setSelectedCategory] = useState<string>("Japanese Cuisine");
   const [recipeData, setRecipeData] = useState<RecipeDataType>({ title: '', description: '', ingredients: [], steps: [], cookingTime: 0, servings: 0, category: selectedCategory, image: undefined });
 
   const handleSaveRecipe = (recipeData: RecipeDataType) => {
     console.log(recipeData);
   };
 
-  const categories = ["和食", "洋食", "中華", "イタリアン", "その他"];
+  const categories = ["Japanese Cuisine", "Western Cuisine", "Chinese Cuisine", "Italian Cuisine", "Others"];
 
   return (
     <div className="container mx-auto p-4">
-      <h2 className="text-xl font-bold mb-4">レシピを追加</h2>
+      <h2 className="text-xl font-bold mb-4">Add Recipe</h2>
       <Dropdown options={categories} selected={selectedCategory} onChange={setSelectedCategory} />
       <ImageUploadSection />
       <RecipeForm onSave={setRecipeData} />

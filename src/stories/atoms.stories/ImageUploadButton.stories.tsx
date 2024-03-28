@@ -8,6 +8,6 @@ export default {
 
 export const Default: StoryObj<typeof ImageUploadButton> = {
   args: {
-    onImageSelect: (file: File) => console.log(file.name), // ファイルが選択されたときのサンプル動作
+    onImageSelect: (file: File) => console.log(file.name), 
   },
 };

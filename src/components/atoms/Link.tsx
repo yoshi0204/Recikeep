@@ -1,4 +1,3 @@
-// src/components/atoms/LinkAtom.tsx
 import { Link as RouterLink } from 'react-router-dom';
 
 interface LinkProps {

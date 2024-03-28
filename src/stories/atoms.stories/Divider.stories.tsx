@@ -12,10 +12,3 @@ export const Default: StoryObj<typeof Divider> = {
   },
 };
 
-// 必要に応じて他のスタイルバリエーションを追加できます
-// 例: カスタムスタイル
-// export const Custom: StoryObj<typeof Divider> = {
-//   args: {
-//     className: 'custom-class',
-//   },
-// };

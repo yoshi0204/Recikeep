@@ -1,10 +1,9 @@
 import { MemoryRouter } from 'react-router-dom';
 import { Meta, StoryObj } from '@storybook/react';
-import RecipeCardGrid from 'src/components/organisms/RecipeCardGrid';
+import RecipeCardGrid from '@/components/organisms/RecipeCardGrid';
 
 const sampleRecipes = [
   { recipeId: 1, imageUrl: 'https://via.placeholder.com/150', title: 'レシピ1', description: '説明1' },
-  // 他のサンプルレシピ
 ];
 
 export default {

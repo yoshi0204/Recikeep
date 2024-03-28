@@ -1,6 +1,6 @@
 import { MemoryRouter } from 'react-router-dom';
 import { Meta, StoryObj } from '@storybook/react';
-import RecipeCard from 'src/components/molecules/RecipeCard';
+import RecipeCard from '@/components/molecules/RecipeCard';
 
 export default {
   title: 'Components/Molecules/RecipeCard',

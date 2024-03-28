@@ -1,8 +1,6 @@
-// seeds/01_users.ts
-import { Knex } from "knex";
-import bcrypt from "bcrypt";
+const bcrypt = require('bcrypt');
 
-export async function seed(knex: Knex): Promise<void> {
+exports.seed = async function(knex) {
   // Deletes ALL existing entries
   await knex("users").del();
 
@@ -18,4 +16,4 @@ export async function seed(knex: Knex): Promise<void> {
     },
     // 他のユーザーを追加
   ]);
-}
+};

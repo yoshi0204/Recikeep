@@ -1,5 +1,3 @@
-// src/pages/HomePage.tsx
-import React from 'react';
 import HomePageTemplate from '../components/templates/HomePageTemplate';
 
 const HomePage: React.FC = () => {

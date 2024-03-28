@@ -21,44 +21,43 @@ const RecipeSubmissionForm: React.FC = () => {
       cookingTime,
       servings,
     };
-    console.log('送信するレシピデータ:', recipeData);
-    // ここでAPIを呼び出し、レシピを保存
+    console.log('Recipe Data to Submit:', recipeData);
+    // API は後に実装予定
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <TextInput
-        placeholder="レシピのタイトル"
+        placeholder="Recipe Title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
       <TextareaInput
-        placeholder="レシピの説明"
+        placeholder="Recipe Description"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
-      {/* 他の入力フィールドを追加 */}
       <TextInput
-        placeholder="材料"
+        placeholder="Ingredients"
         value={ingredients}
         onChange={(e) => setIngredients(e.target.value)}
       />
       <TextareaInput
-        placeholder="手順"
+        placeholder="Steps"
         value={steps}
         onChange={(e) => setSteps(e.target.value)}
       />
       <TextInput
-        placeholder="調理時間"
+        placeholder="Cooking Time"
         value={cookingTime}
         onChange={(e) => setCookingTime(e.target.value)}
       />
       <TextInput
-        placeholder="分量"
+        placeholder="Servings"
         value={servings}
         onChange={(e) => setServings(e.target.value)}
       />
-      <PrimaryButton type="submit">レシピを投稿</PrimaryButton>
+      <PrimaryButton type="submit">Post Recipe</PrimaryButton>
     </form>
   );
 };

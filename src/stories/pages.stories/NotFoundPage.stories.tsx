@@ -1,6 +1,6 @@
 import { MemoryRouter } from 'react-router-dom';
 import { Meta, StoryObj } from '@storybook/react';
-import NotFoundPage from 'src/pages/Page404';
+import NotFoundPage from '@/pages/Page404';
 
 export default {
   title: 'Pages/NotFoundPage',

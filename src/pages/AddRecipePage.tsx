@@ -1,5 +1,3 @@
-// src/pages/AddRecipePage.tsx
-import React from 'react';
 import AddRecipeTemplate from '../components/templates/AddRecipeTemplate';
 
 const AddRecipePage: React.FC = () => {

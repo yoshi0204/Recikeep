@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import AddRecipePage from 'src/pages/AddRecipePage';
+import AddRecipePage from '@/pages/AddRecipePage';
 
 export default {
   title: 'Pages/AddRecipePage',

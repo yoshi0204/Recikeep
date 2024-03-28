@@ -13,9 +13,9 @@ export const Default: StoryObj<typeof TextInput> = {
 
     return (
       <TextInput 
-      {...args} // 最初にargsを展開
-      value={value} // ここでvalueを設定
-      onChange={(e) => setValue(e.target.value)} // ここでonChangeを設定
+      {...args}
+      value={value} 
+      onChange={(e) => setValue(e.target.value)}
       />
     );
   },

@@ -1,4 +1,3 @@
-// src/components/atoms/TextareaInput.tsx
 interface TextareaInputProps {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;

@@ -1,18 +1,16 @@
-// RegisterForm.tsx
-import React from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import axios from 'axios';
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
-import { validationSchema } from 'src/utils/validationSchema'; // アカウント登録用にカスタマイズする必要があるかもしれません
-import PrimaryButton from 'src/components/atoms/PrimaryButton';
-import LoginInput from 'src/components/molecules/LoginInput'; // フォーム入力コンポーネントの再利用
+import { validationSchema } from '@/utils/validationSchema';
+import PrimaryButton from '@/components/atoms/PrimaryButton';
+import LoginInput from '@/components/molecules/LoginInput'; 
 import { useNavigate } from 'react-router-dom';
 
 interface RegisterFormInputs {
   email: string;
   password: string;
-  confirmPassword: string; // パスワード確認用フィールド
+  confirmPassword: string; 
 }
 
 const RegisterForm: React.FC = () => {
@@ -23,7 +21,7 @@ const RegisterForm: React.FC = () => {
 
   const onSubmit = async (data: RegisterFormInputs) => {
     if (data.password !== data.confirmPassword) {
-      alert('パスワードとパスワード確認が一致しません。');
+      alert('Passwords do not match.');
       return;
     }
     try {
@@ -34,11 +32,11 @@ const RegisterForm: React.FC = () => {
       if (response.status === 200) {
         navigate('/');
       } else {
-        alert('アカウントの登録に失敗しました。');
+        alert('Failed to register an account.');
       }
     } catch (error) {
-      alert('アカウントの登録に失敗しました。');
-      console.error('アカウント登録処理中にエラーが発生しました。', error);
+      alert('Failed to register an account.');
+      console.error('An error occurred while registering the account.', error);
     }
   };
 

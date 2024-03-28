@@ -1,6 +1,6 @@
 import { MemoryRouter } from 'react-router-dom';
 import { Meta, StoryObj } from '@storybook/react';
-import LoginForm from 'src/components/organisms/LoginForm';
+import LoginForm from '@/components/organisms/LoginForm';
 
 export default {
   title: 'Components/Organisms/LoginForm',

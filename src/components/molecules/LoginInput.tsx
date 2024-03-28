@@ -9,7 +9,7 @@ interface LoginInputProps {
     icon: IconDefinition;
     placeholder?: string;
     className?: string;
-    register: any; // register を props から削除
+    register: any; 
     type: string;
 }
 

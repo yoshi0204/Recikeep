@@ -1,4 +1,3 @@
-// src/components/organisms/RecipeCardGrid.tsx
 import RecipeCard from '../molecules/RecipeCard';
 
 interface Recipe {

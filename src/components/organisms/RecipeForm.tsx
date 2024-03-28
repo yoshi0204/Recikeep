@@ -1,8 +1,6 @@
-// src/components/organisms/RecipeForm.tsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import SaveRecipeButton from '../molecules/SaveRecipeButton';
 
-// RecipeFormProps で使用する RecipeDataType を定義
 interface RecipeDataType {
     title: string;
     description: string;
@@ -54,7 +52,6 @@ interface RecipeDataType {
         value={recipeData.description}
         onChange={handleChange}
       />
-      {/* 他の入力フィールド */}
       <SaveRecipeButton onSave={() => onSave(recipeData)} />
     </form>
   );

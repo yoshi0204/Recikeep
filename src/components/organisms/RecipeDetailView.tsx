@@ -1,5 +1,3 @@
-// src/components/organisms/RecipeDetailView.tsx
-import React from 'react';
 import ImageDisplay from '../atoms/ImageDisplay';
 import Divider from '../atoms/Divider';
 
@@ -37,17 +35,17 @@ const RecipeDetailView: React.FC<RecipeDetailViewProps> = ({
       <ImageDisplay src={imageUrl} alt={title} className="ml-auto" />
       <h1>{title}</h1>
       <p>{description}</p>
-      <p>調理時間: {cookingTime}分</p>
-      <p>分量: {servings}人分</p>
+      <p> Cooking time: {cookingTime}min</p>
+      <p>amount {servings}servings</p>
       <Divider />
-      <h2>材料</h2>
+      <h2>Ingredients</h2>
       <ul>
         {ingredients.map((ingredient, index) => (
           <li key={index}>{ingredient.name} - {ingredient.amount}</li>
         ))}
       </ul>
       <Divider />
-      <h2>手順</h2>
+      <h2>Process</h2>
       <ol>
         {steps.map((step, index) => (
           <li key={index}>{step.stepNumber}. {step.instruction}</li>

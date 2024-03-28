@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import RecipeDetailView from 'src/components/organisms/RecipeDetailView';
+import RecipeDetailView from '@/components/organisms/RecipeDetailView';
 
 export default {
   title: 'Components/Organisms/RecipeDetailView',

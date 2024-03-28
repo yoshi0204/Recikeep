@@ -1,5 +1,3 @@
-// src/components/molecules/LinkedImage.tsx
-import React from 'react';
 import ImageDisplay from '../atoms/ImageDisplay';
 import Link from '../atoms/Link';
 

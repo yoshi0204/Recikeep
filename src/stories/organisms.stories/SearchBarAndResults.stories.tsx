@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import SearchBarAndResults from 'src/components/organisms/SearchBarAndResults';
+import SearchBarAndResults from '@/components/organisms/SearchBarAndResults';
 
 export default {
   title: 'Components/Organisms/SearchBarAndResults',

@@ -1,6 +1,6 @@
 // src/stories/pages/SearchResultsPage.stories.tsx
 import { Meta, StoryObj } from '@storybook/react';
-import SearchResultsPage from 'src/pages/SearchResultsPage';
+import SearchResultsPage from '@/pages/SearchResultsPage';
 
 export default {
   title: 'Pages/SearchResultsPage',

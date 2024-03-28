@@ -1,15 +1,12 @@
-// <timestamp>_create_users_table.ts
-import { Knex } from "knex";
-
-export async function up(knex: Knex): Promise<void> {
+exports.up = function (knex) {
   return knex.schema.createTable("users", (table) => {
-    table.increments("id"); // SQLiteでは自動的にAUTOINCREMENTとして扱われます
+    table.increments("id");
     table.string("email").unique();
     table.string("password");
     table.timestamps();
   });
-}
+};
 
-export async function down(knex: Knex): Promise<void> {
+exports.down = function (knex) {
   return knex.schema.dropTable("users");
-}
+};

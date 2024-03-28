@@ -1,4 +1,3 @@
-// src/components/atoms/Label.tsx
 interface LabelProps {
   text: string;
   htmlFor?: string;

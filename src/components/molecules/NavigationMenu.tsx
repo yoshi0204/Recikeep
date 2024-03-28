@@ -1,5 +1,3 @@
-// src/components/molecules/NavigationMenu.tsx
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const NavigationMenu: React.FC = () => {
@@ -7,15 +5,15 @@ const NavigationMenu: React.FC = () => {
     <nav className="bg-gray-800 p-4 text-white">
       <ul className="flex space-x-4">
         <li>
-          <Link to="/" className="hover:text-gray-300">ホーム</Link>
+          <Link to="/" className="hover:text-gray-300">Home</Link>
         </li>
         <li>
-          <Link to="/about" className="hover:text-gray-300">アバウト</Link>
+          <Link to="/about" className="hover:text-gray-300">About</Link>
         </li>
         <li>
-          <Link to="/contact" className="hover:text-gray-300">コンタクト</Link>
+          <Link to="/contact" className="hover:text-gray-300">Contact</Link>
         </li>
-        {/* 他のナビゲーションリンクを追加 */}
+        {/* Add other navigation links here */}
       </ul>
     </nav>
   );

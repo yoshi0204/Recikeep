@@ -1,5 +1,4 @@
-// src/components/molecules/ImageUploadSection.tsx
-import React, { useState } from 'react';
+import {useState} from 'react';
 import Image from '../atoms/Image';
 import ImageUploadButton from '../atoms/ImageUploadButton';
 

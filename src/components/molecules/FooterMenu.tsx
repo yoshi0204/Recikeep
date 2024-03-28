@@ -1,5 +1,3 @@
-// src/components/molecules/FooterMenu.tsx
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faPlus, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
 

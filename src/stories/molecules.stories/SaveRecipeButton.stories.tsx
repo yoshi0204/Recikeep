@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import SaveRecipeButton from 'src/components/molecules/SaveRecipeButton';
+import SaveRecipeButton from '@/components/molecules/SaveRecipeButton';
 
 export default {
   title: 'Components/Molecules/SaveRecipeButton',

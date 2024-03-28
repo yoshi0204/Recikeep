@@ -1,6 +1,6 @@
 import { MemoryRouter } from 'react-router-dom';
 import { Meta, StoryObj } from '@storybook/react';
-import HomePage from 'src/pages/HomePage';
+import HomePage from '@/pages/HomePage';
 
 export default {
   title: 'Pages/HomePage',

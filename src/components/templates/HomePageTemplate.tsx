@@ -12,7 +12,8 @@ const HomePageTemplate: React.FC = () => {
   const tabsData = [
     { label: 'Recommended', content: 'Recommended dishes content' },
     { label: 'New Recipes', content: 'Newly added recipes content' },
-    // ...他のカテゴリタブ...
+    
+
   ];
   const recentlyViewedRecipes = [
     { recipeId: 1, imageUrl: 'public/images/29017962_l.jpg', title: 'Mediterranean Salad' },
@@ -31,7 +32,7 @@ const HomePageTemplate: React.FC = () => {
     { recipeId: 8, imageUrl: 'public/images/chigyu458A7197.jpg', title: 'Mediterranean Salad' },
     { recipeId: 9, imageUrl: 'public/images/29017962_l.jpg', title: 'Mediterranean Salad' },
     { recipeId: 10, imageUrl: 'public/images/29017962_l.jpg', title: 'Mediterranean Salad' },
-  ];
+  ];//デモデータ
 
   
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {

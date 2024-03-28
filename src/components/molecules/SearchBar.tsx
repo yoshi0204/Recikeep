@@ -5,13 +5,13 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 interface SearchBarProps {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  placeholder?: string; // プレースホルダーはオプショナルなプロパティです。
+  placeholder?: string; 
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({
   value,
   onChange,
-  placeholder = "Search for recipes" // 提供された画像のプレースホルダーのテキストです。
+  placeholder = "Search for recipes" 
 }) => {
   return (
     <div className="flex items-center border-2 border-gray-600 rounded-full py-4 px-4 mx-12 bg-black">

@@ -1,30 +1,29 @@
-// src/pages/RecipeDetailPage.tsx
-import React from 'react';
-import RecipeDetailView from '@/components/organisms/RecipeDetailView';
+import RecipeDetailTemplate from '@/components/templates/RecipeDetailTemplate';
+
+const demoData = {
+  imageUrl: "public/images/yos0034-054.jpg", 
+  title: "デモレシピ",
+  description: "",
+  cookingTime: 45,
+  servings: 4,
+  ingredients: [
+    { name: "小麦粉", amount: "200g" },
+    { name: "砂糖", amount: "100g" },
+    { name: "卵", amount: "2個" },
+    { name: "バター", amount: "50g" },
+    // 他のデモ食材
+  ],
+  steps: [
+    { stepNumber: 1, instruction: "オーブンを180度に予熱します。" },
+    { stepNumber: 2, instruction: "小麦粉と砂糖を混ぜ合わせます。" },
+    // 他のデモ手順
+  ],
+};
 
 const RecipeDetailPage: React.FC = () => {
-  // ダミーデータです。実際のアプリケーションでは、APIから取得するデータを使用します。
-  const recipeData = {
-    imageUrl: "path/to/image.jpg",
-    title: "レシピのタイトル",
-    description: "レシピの説明",
-    cookingTime: 30,
-    servings: 4,
-    ingredients: [
-      { name: "材料1", amount: "1個" },
-      { name: "材料2", amount: "200g" },
-      // 他の材料...
-    ],
-    steps: [
-      { stepNumber: 1, instruction: "手順1の説明" },
-      { stepNumber: 2, instruction: "手順2の説明" },
-      // 他の手順...
-    ],
-  };
-
   return (
-    <div>
-      <RecipeDetailView {...recipeData} /> // テンプレートコンポーネントを使用
+    <div className="bg-gray-800">
+      <RecipeDetailTemplate recipeData={demoData} />
     </div>
   );
 };

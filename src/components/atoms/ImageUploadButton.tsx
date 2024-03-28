@@ -1,4 +1,3 @@
-// src/components/atoms/ImageUploadButton.tsx
 interface ImageUploadButtonProps {
   onImageSelect: (file: File) => void;
 }
@@ -13,7 +12,7 @@ const ImageUploadButton: React.FC<ImageUploadButtonProps> = ({ onImageSelect }) 
 
   return (
     <label className="block">
-      <span className="sr-only">写真を追加</span>
+      <span className="sr-only">Add pics</span>
       <input
         type="file"
         accept="image/*"

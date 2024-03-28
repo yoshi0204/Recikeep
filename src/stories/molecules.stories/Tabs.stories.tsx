@@ -1,6 +1,6 @@
 import { SetStateAction, useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import SearchBar from 'src/components/molecules/SearchBar';
+import SearchBar from '@/components/molecules/SearchBar';
 
 export default {
   title: 'Components/Molecules/SearchBar',

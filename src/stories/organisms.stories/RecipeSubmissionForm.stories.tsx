@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import RecipeSubmissionForm from 'src/components/organisms/RecipeSubmissionForm';
+import RecipeSubmissionForm from '@/components/organisms/RecipeSubmissionForm';
 
 export default {
   title: 'Components/Organisms/RecipeSubmissionForm',

@@ -1,4 +1,3 @@
-// src/components/atoms/Image.tsx
 interface ImageProps {
   src: string;
   alt: string;
