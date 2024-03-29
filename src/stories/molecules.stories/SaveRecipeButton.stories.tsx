@@ -10,6 +10,6 @@ export const Default: StoryObj<SaveRecipeButtonProps> = {
   args: {
     onSave: (recipeData: RecipeDataType) => {
       console.log(recipeData);
-    },//api後に実装
+    },//後でapi実装
   },
 };
