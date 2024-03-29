@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { UseFormRegisterReturn } from 'react-hook-form';
+
 
 interface LoginInputProps {
     error: string | undefined;
@@ -9,7 +11,7 @@ interface LoginInputProps {
     icon: IconDefinition;
     placeholder?: string;
     className?: string;
-    register: any; 
+    register: UseFormRegisterReturn; 
     type: string;
 }
 

@@ -1,7 +1,7 @@
 import RecipeDetailTemplate from 'src/components/templates/RecipeDetailTemplate';
 
 // モックのレシピデータ
-const RecipeData = {
+export const RecipeData = {
   imageUrl: 'URL',
   title: 'Recipe Title',
   description: 'Recipe Description',

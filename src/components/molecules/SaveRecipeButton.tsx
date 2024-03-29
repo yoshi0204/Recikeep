@@ -1,4 +1,5 @@
-interface RecipeDataType {
+
+export interface RecipeDataType {
   title: string;
   description: string;
   ingredients: string[];
@@ -9,25 +10,24 @@ interface RecipeDataType {
   image?: File;
 }
 
-interface SaveRecipeButtonProps {
-  onSave: (recipeData: RecipeDataType) => void; 
+export interface SaveRecipeButtonProps {
+  onSave: (recipeData: RecipeDataType) => void;
 }
 
-const SaveRecipeButton: React.FC<SaveRecipeButtonProps> = ({ onSave }) => {
+export const SaveRecipeButton: React.FC<SaveRecipeButtonProps> = ({ onSave }) => {
+  const dummyRecipeData: RecipeDataType = {
+    title: 'Recipe Title',
+    description: 'Recipe Description',
+    ingredients: ['Ingredient 1', 'Ingredient 2'],
+    steps: ['Step 1', 'Step 2'],
+    cookingTime: 30,
+    servings: 4,
+    category: 'Japanese Cuisine',
+  };
+
   return (
-    <button onClick={() => onSave({
-      title: 'Recipe Title',
-      description: 'Recipe Description',
-      ingredients: ['Ingredient 1', 'Ingredient 2'],
-      steps: ['Step 1', 'Step 2'],
-      cookingTime: 30,
-      servings: 4,
-      category: 'Japanese Cuisine',
-     // image: ここで画像データを渡す。後に実装
-    })}>
-      Save
+    <button onClick={() => onSave(dummyRecipeData)}>
+      Save Recipe
     </button>
   );
 };
-
-export default SaveRecipeButton;
