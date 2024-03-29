@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build --mode production",
-    "preview": "vite preview",
     "test": "vitest",
+    "preview": "vite preview",
     "test:watch": "vitest watch",
     "coverage": "vitest run --coverage",
     "lint": "eslint src",
