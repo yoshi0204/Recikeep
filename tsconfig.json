@@ -17,10 +17,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": "./", // ベースURLをプロジェクトのルートに設定
+    "baseUrl": "./", 
     "paths": {
-      "@/*": ["src/*"], // "src" ディレクトリ内のすべてのファイルに "@" エイリアスを設定
-      "src/*": ["src/*"] // "src" プレフィックスも同様に扱う
+      "@/*": ["src/*"], 
+      "src/*": ["src/*"] 
     }
   },
   "ts-node": {

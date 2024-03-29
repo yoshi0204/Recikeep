@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import RecipeForm from '../organisms/RecipeForm';
 import ImageUploadSection from '../molecules/ImageUploadSection';
-import SaveRecipeButton from '../molecules/SaveRecipeButton';
+import { SaveRecipeButton } from '../molecules/SaveRecipeButton';
 import FooterMenu from '../molecules/FooterMenu';
 import Dropdown from '../atoms/Dropdown';
 

@@ -1,3 +1,5 @@
+// SaveRecipeButton.tsx
+import React from 'react';
 
 export interface RecipeDataType {
   title: string;
@@ -15,18 +17,18 @@ export interface SaveRecipeButtonProps {
 }
 
 export const SaveRecipeButton: React.FC<SaveRecipeButtonProps> = ({ onSave }) => {
-  const dummyRecipeData: RecipeDataType = {
-    title: 'Recipe Title',
-    description: 'Recipe Description',
-    ingredients: ['Ingredient 1', 'Ingredient 2'],
-    steps: ['Step 1', 'Step 2'],
-    cookingTime: 30,
-    servings: 4,
-    category: 'Japanese Cuisine',
-  };
-
+  // デモ用のダミーデータ、実際には親コンポーネントまたはフォームからデータが渡される想定
   return (
-    <button onClick={() => onSave(dummyRecipeData)}>
+    <button onClick={() => onSave({
+      title: 'Example Title',
+      description: 'Example Description',
+      ingredients: ['Ingredient 1', 'Ingredient 2'],
+      steps: ['Step 1', 'Step 2'],
+      cookingTime: 45,
+      servings: 4,
+      category: 'Example Category',
+      // image: ここでは省略
+    })}>
       Save Recipe
     </button>
   );

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { SaveRecipeButton, SaveRecipeButtonProps, RecipeDataType } from '/home/mashimashi/Desktop/Recikeep/src/components/molecules/SaveRecipeButton';
+import { SaveRecipeButton, SaveRecipeButtonProps } from 'src/components/molecules/SaveRecipeButton'; // 相対パスに注意してください
 
 export default {
   title: 'Components/Molecules/SaveRecipeButton',
@@ -8,8 +8,8 @@ export default {
 
 export const Default: StoryObj<SaveRecipeButtonProps> = {
   args: {
-    onSave: (recipeData: RecipeDataType) => {
-      console.log(recipeData);
-    },//後でapi実装
+    onSave: (recipeData) => {
+      console.log('Saved recipe data:', recipeData);
+    },
   },
 };

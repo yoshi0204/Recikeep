@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import SaveRecipeButton from '../molecules/SaveRecipeButton';
+import { SaveRecipeButton } from '../molecules/SaveRecipeButton';
 
 interface RecipeDataType {
     title: string;
