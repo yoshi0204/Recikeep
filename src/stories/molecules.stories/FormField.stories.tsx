@@ -13,7 +13,7 @@ export const Default: StoryObj<typeof FormField> = {
     return <FormField {...args} value={value} onChange={(e: { target: { value: SetStateAction<string>; }; }) => setValue(e.target.value)} />;
   },
   args: {
-    label: 'ラベル',
+    label: 'label',
     id: 'input-id',
     name: 'input-name',
     placeholder: 'プレースホルダー'
