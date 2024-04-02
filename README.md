@@ -21,6 +21,9 @@ Recikeepは、お気に入りのレシピを保存し、簡単にアクセスで
 - React Hook Form
 - Zod
 - Prettier
+- Express
+- AWS amplify,Cognite（移行中）
+- SQLite
 
 ## プラグイン
 
@@ -29,18 +32,15 @@ Recikeepは、お気に入りのレシピを保存し、簡単にアクセスで
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)：Babelを使用してFast Refreshを提供
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)：SWCを使用してFast Refreshを提供
 
-## ESLint設定の拡張
+## 現在の作業状況
 
-開発中のアプリケーションに対してより厳密なルールを適用するためには、以下のように設定を更新します:
+フロントエンド
+各ページのcssを追加
+AddRecipeページの修正
+全体の整理
 
-```js
-export default {
-  // 他のルール...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+バックエンド
+node.jsのフレームワークepressで簡易的なログイン機能の実装から
+
+AWSのAmplifyで認証機能を実装し、cognitoでvalidation機能の実装に移行しています。
+デモデータで作成していたところをAPI機能に変換中

@@ -1,5 +1,3 @@
-// SaveRecipeButton.tsx
-import React from 'react';
 
 export interface RecipeDataType {
   title: string;
