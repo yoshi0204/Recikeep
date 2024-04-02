@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import RegisterPage from '/home/mashimashi/Desktop/Recikeep/src/pages/RegisterPage';
+import RegisterPage from 'src/pages/RegisterPage';
 import { MemoryRouter } from 'react-router-dom';
 
 export default {

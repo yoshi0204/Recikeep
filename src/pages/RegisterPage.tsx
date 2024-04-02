@@ -1,4 +1,4 @@
-import RegisterFormTemplate from '/home/mashimashi/Desktop/Recikeep/src/components/templates/RegisterFormTemplate';
+import RegisterFormTemplate from 'src/components/templates/RegisterFormTemplate';
 
 const RegisterPage: React.FC = () => {
   return <RegisterFormTemplate />;
