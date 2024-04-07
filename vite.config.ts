@@ -1,10 +1,10 @@
-// vite.config.js
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { resolve } from "path";
 
 export default defineConfig({
+  base: "/Recikeep/", // GitHub Pagesのためのベースパス
   plugins: [react(), tsconfigPaths()],
   server: {
     proxy: {
@@ -21,6 +21,7 @@ export default defineConfig({
     },
   },
   build: {
+    outDir: "docs", // ビルド出力ディレクトリを`docs`に設定
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
