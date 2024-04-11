@@ -4,7 +4,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import { resolve } from "path";
 
 export default defineConfig({
-  base: "/Recikeep/", // GitHub Pagesのためのベースパス
+  base: "/", // GitHub Pagesのためのベースパス
   plugins: [react(), tsconfigPaths()],
   server: {
     proxy: {

@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-recikeep-dev-162da-authRole",
+      "UnauthRoleArn": "arn:aws:iam::905418304686:role/amplify-recikeep-dev-162da-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::905418304686:role/amplify-recikeep-dev-162da-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-recikeep-dev-162da-deployment",
+      "UnauthRoleName": "amplify-recikeep-dev-162da-unauthRole",
+      "StackName": "amplify-recikeep-dev-162da",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:905418304686:stack/amplify-recikeep-dev-162da/88c2e940-f66c-11ee-874d-06d0481ab2bd",
+      "AmplifyAppId": "d1bkpgcckgfawl"
+    },
+    "categories": {
+      "auth": {
+        "recikeep438d8aef": {}
+      },
+      "function": {
+        "registerUserFunction": {
+          "deploymentBucketName": "amplify-recikeep-dev-162da-deployment",
+          "s3Key": "amplify-builds/registerUserFunction-776552384c3347345361-build.zip"
+        }
+      },
+      "api": {
+        "apia59a94a9": {}
+      }
+    }
+  }
+}

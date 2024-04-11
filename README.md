@@ -42,5 +42,6 @@ AddRecipeページの修正
 バックエンド
 node.jsのフレームワークepressで簡易的なログイン機能の実装から
 
-AWSのAmplifyで認証機能を実装し、cognitoでvalidation機能の実装に移行しています。
+expressで簡易的なログイン機能を実装していたものをLambda関数に移行が完了し、expressのファイルを削除中
+AWSのamplifyにデプロイ完了
 デモデータで作成していたところをAPI機能に変換中
